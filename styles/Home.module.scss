@@ -1,0 +1,107 @@
+.loginPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .formContainer {
+    background: #FFF;
+    width: 100vw;
+    padding: 0px 1.5rem 1.25rem;
+    margin: auto;
+
+    .loginHeader {
+      color: rgb(32, 58, 96);
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      legend {
+        margin-top: 0.5rem;
+        margin-bottom: 0.75rem;
+        color: rgb(32, 58, 96);
+      }
+      label {
+        margin-top: 1rem;
+        opacity: 0.5;
+        font-size: 1rem;
+      }
+      input {
+        color: rgb(32, 58, 96);
+        width: 100%;
+        height: 3rem;
+        border-radius: 5px;
+        border: 1px solid rgba(207, 206, 207, 0.37);
+        margin: 0.5rem 0px 0px;
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+        outline: 0;
+        &::placeholder {
+          color: rgba(0,0,0,0.3);
+        }
+        &:focus, &:focus-within, &:focus-visible {
+          border: 1px solid rgb(4, 149, 95);
+        }
+      }
+      .forgotPassword {
+        display: flex;
+        margin-left: auto;
+        font-size: 1rem;
+        opacity: 0.2;
+      }
+      button {
+        border: none;
+        margin: 2.5rem auto 0;
+        padding: 0.5rem 1rem;
+        min-width: -webkit-fit-content;
+        min-width: -moz-fit-content;
+        min-width: fit-content;
+        width: 11.975rem;
+        height: 3rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        line-height: normal;
+        &:disabled {
+          background: rgba(0, 0, 0, 0.03);
+          color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+
+    .createAccount {
+      display: flex;
+      margin-top: 3.813rem;
+      justify-content: center;
+      color: rgb(243, 142, 125);
+      font-size: 1rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .loginPage {
+    background: center center url('https://app.rockpapercoin.com/static/rock-paper-coin-0034.jpg');
+    background-size: cover;
+
+    .formContainer {
+      width: 39.563rem;
+      padding: 1.25rem 8rem;
+      border-radius: 5px;
+      box-shadow: rgba(74, 74, 74, 0.25) 30px 30px 60px 0px;
+      border: 1px solid rgba(207, 206, 207, 0.37);
+      
+      .loginHeader, form legend {
+        text-align: center;
+      }
+    }
+  }
+}

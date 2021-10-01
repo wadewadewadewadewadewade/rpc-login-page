@@ -1,0 +1,12 @@
+.basePage {
+  width: 100%;
+  min-height: calc(-4rem + 100vh);
+  height: calc(-4rem + 100vh);
+}
+
+@media screen and (min-width: 960px) {
+  .basePage {
+    min-height: calc(-8.75rem + 100vh);
+    height: calc(-8.75rem + 100vh);
+  }
+}

@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #FFF;
+  height: 4rem;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+
+  .logo {
+    display: flex;
+    margin-right: auto;
+    width: 10rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .signupButton {
+    background: rgb(32, 58, 96);
+    color: #FFF;
+    width: 7rem;
+    height: 3rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    border: none;
+    border-radius: 5px;
+    margin-left: auto;
+    font-size: 1rem;
+    &:hover {
+      background: rgb(243, 142, 125);
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .header {
+    height: 5.625rem;
+    padding: 0 2.5rem;
+  }
+}
