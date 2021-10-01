@@ -4,6 +4,12 @@ On submission of the form, the form data will be output into the console, and al
 
 ## Caviats:
 
+### Font
+
+Display-wise, app.rockpapercoin.com uses the [Brandon Grotesque](https://fonts.adobe.com/fonts/brandon-grotesque) font, but that appears to be a font i'd have to pay for, so I used a similar free [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans) font from Google Fonts. So the display compairison between teh two pages won't be exact, unfortunately.
+
+### Form Validation
+
 The email and password fields are required, and the email address is validated via a regex borrowed from https://emailregex.com/, but there is no minimum/maximum password length enforced.
 
 Typically login pages don't always validate these field meta-data as they validate the email/password server-side, and that server-side validation wil catch all fo the rest of the validation errors. They save client-side validation like this for "sign up" pages. But some client-side validation is my preference as it saves the user a server round-trip.
